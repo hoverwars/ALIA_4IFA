@@ -19,6 +19,7 @@ Différentes informations pour savoir comment jouer au jeu et comment choisir le
 
 Lancer `game.bat`, si vous avez swipl dans votre variable PATH.
 Vous pourrez ensuite utiliser la requête `init.` pour démarrer le jeu.
+Sinon, `swipl ./main.pl` fera l'affaire.
 
 ## Choisir les adversaires
 
@@ -37,13 +38,13 @@ Informations techniques liées à notre implémentation.
 
 Nous sommes partis, comme la majorité des groupes, sur la base de Morpion que nous avions implémenté en cours. Nous représentons notre plateau comme étant une liste unique, en colonne:
 
-0, 6, 12, ...
-1, 7, 13, ...
-2, 8, 14, ...
-3, 9, 15, ...
-.  .  .  
-.  .  .
-.  .  .
+0, 6, 12, ... <br>
+1, 7, 13, ... <br>
+2, 8, 14, ... <br>
+3, 9, 15, ... <br>
+.  .  .  <br>
+.  .  .  <br>
+.  .  .  <br>
 
 L'ensemble du jeu a été réalisé par nous même, à l'exception du prédicat d'affichage du jeu que nous avons généré par IA. 
 Notre version n'a pas été mise à jour pour fonctionner avec le système de tournoi qui a été implémenté durant le projet.
