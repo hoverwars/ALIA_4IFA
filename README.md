@@ -4,6 +4,7 @@
   - [Choisir les adversaires](#choisir-les-adversaires)
 - [Fonctionnement](#fonctionnement)
   - [Modélisation du jeu](#modélisation-du-jeu)
+  - [Logique de nos IA](#logique-de-nos-ia)
   - [Fichiers](#fichiers)
 
 # Projet Puissance 4 ALIA
@@ -48,6 +49,15 @@ Nous sommes partis, comme la majorité des groupes, sur la base de Morpion que n
 
 L'ensemble du jeu a été réalisé par nous même, à l'exception du prédicat d'affichage du jeu que nous avons généré par IA. 
 Notre version n'a pas été mise à jour pour fonctionner avec le système de tournoi qui a été implémenté durant le projet.
+
+## Logique de nos IA
+
+Chacune de nos IA (min max, a*) s'exécute de cette manière:
+
+1) Placement si cette IA joue en premier: L'IA jouera au centre si elle démarre la partie
+2) Vérification d'un coup gagnant: S'il existe un coup qui fait gagner immédiatement, alors elle le joue
+3) Vérification d'un coup perdant: Si l'adversaire peut jouer un coup qui le fera gagner, alors l'IA va le bloquer.
+4) Algorithme de choix du meilleur coup, qui dépend de l'IA
 
 ## Fichiers
 
